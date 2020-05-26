@@ -7,11 +7,10 @@ int get_change(int m)
     int modTen = m % 10;
 
     int five = modTen / 5;
-    int sum = ten + five;
     int modFive = modTen % 5;
 
     int one = modFive / 1;
-    int res = sum + one;
+    int res = ten + five + one;
 
     return res;
 }
