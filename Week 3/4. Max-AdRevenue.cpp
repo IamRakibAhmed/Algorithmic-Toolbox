@@ -23,11 +23,7 @@ int main()
     vector<long long> profits(n), clicks(n);
     for (size_t i = 0; i < n; i++)
     {
-        cin >> profits[i];
-    }
-    for (size_t i = 0; i < n; i++)
-    {
-        cin >> clicks[i];
+        cin >> profits[i] >> clicks[i];
     }
 
     long long res = max_revenue(profits, clicks, n);
